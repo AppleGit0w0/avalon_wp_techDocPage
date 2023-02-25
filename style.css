@@ -1,4 +1,133 @@
-body {
-	background-color: #e5e7eb;
-	font-family: Arial, Helvetica, sans-serif;
+/*Color Palette*/
+:root {
+	--crimson: #64231f;
+	--red: #af3327;
+	--green: #81b4b4;
+	--sand: #df966b;
+	--off-white: #efe2d9;
+	--coal: #4d4e53;
 }
+/*Color Palette*/
+/*General*/
+*,
+::before,
+::after {
+	/*border: 1px solid red;*/
+	margin: 0;
+	padding: 0;
+}
+/*General*/
+/*Navigation Bar*/
+#navbar {
+	display: block;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	min-width: 300px;
+	width: 300px;
+	height: 100%;
+	background-color: var(--crimson);
+	color: var(--off-white);
+  }
+
+.character-img {
+	width: 280px;
+	margin: 0 auto 1rem auto;
+	display: flex;
+	border-radius: 1rem;
+}
+
+#navbar header {
+	font-size: 2.4rem;
+	text-align: center;
+	font-family: 'Crimson Text', Arial, sans-serif;
+	padding: 15px 0;
+}
+
+#navbar ul {
+	list-style-type: none;
+	text-decoration: none;
+	padding-left: none;
+}
+
+#navbar a {
+	display: block;
+	padding: 10px 10px;
+	color: var(--off-white);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#navbar a:hover {
+	background-color: var(--green);
+	color: var(--off-white);
+}
+
+/*Navigation Bar*/
+/*Main Section*/
+
+html,
+body {
+	min-width: 300px;
+	background-color: var(--off-white);
+	color: var(--coal);
+	line-height: 1.5;
+	scroll-behavior: smooth;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.header01 {
+	font-size: 2rem;
+	background-color: var(--green);
+	text-align: center;
+	color: var(--off-white);
+	margin-bottom: .5rem;
+}
+
+.header02 {
+	font-size: 1.5rem;
+	margin-bottom: .5rem;
+}
+
+h3 {
+	margin-bottom: 0;
+}
+
+#main-doc {
+	position: absolute;
+	margin-left: 300px;
+	margin-right: 15vw;
+	padding: 20px;
+}
+
+section {
+	margin-bottom: 2rem;
+}
+
+.section-border {
+	border-bottom: 1px dotted var(--green);
+	margin-bottom: 1rem;
+}
+
+section p {
+	margin-bottom: 1rem;
+}
+
+section span {
+	display: block;
+	font-weight: 600;
+  }
+
+section ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
+  }
+
+section li {
+	/*border: 1px solid #4d4e53;*/
+	width: 100%;
+	border-bottom: 1px dotted var(--green);
+	margin-bottom: 1rem;
+  }
+/*Main Section*/
