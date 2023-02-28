@@ -16,25 +16,46 @@
 	margin: 0;
 	padding: 0;
 }
+
+html,
+body {
+	background-color: var(--off-white);
+	color: var(--coal);
+	line-height: 1.5;
+	scroll-behavior: smooth;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h3 {
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+	color: var(--crimson);
+}
 /*General*/
+
 /*Navigation Bar*/
 #navbar {
 	display: block;
 	position: fixed;
 	top: 0px;
-	left: 200px;
-	min-width: 300px;
+	left: 0;
 	width: 300px;
+	min-width: 180px;
 	height: 100%;
 	background-color: var(--crimson);
 	color: var(--off-white);
-  }
+	align-items: center;
+}
 
 .character-img {
 	width: 280px;
 	margin: 0 auto 1rem auto;
 	display: flex;
 	border-radius: 1rem;
+	min-width: 160px;
 }
 
 #navbar header {
@@ -42,6 +63,7 @@
 	text-align: center;
 	font-family: 'Crimson Text', Arial, sans-serif;
 	padding: 15px 0;
+
 }
 
 #navbar ul {
@@ -63,19 +85,27 @@
 	color: var(--off-white);
 }
 
-/*Navigation Bar*/
-/*Main Section*/
+@media (max-width:700px) {
+	#navbar {
+		width: 180px;
+	}
 
-html,
-body {
-	min-width: 300px;
-	background-color: var(--off-white);
-	color: var(--coal);
-	line-height: 1.5;
-	scroll-behavior: smooth;
-	font-family: 'Open Sans', Arial, sans-serif;
+	.character-img {
+		width: 160px;
+		margin: 0 auto 0 auto;
+	}
+	#navbar header {
+		font-size: 1.4rem;
+	}
+
+	#navbar a {
+		padding: 7px;
+		font-size: 1rem;
+	}
 }
+/*Navigation Bar*/
 
+/*Main Section*/
 .header01 {
 	font-size: 2rem;
 	background-color: var(--green);
@@ -92,17 +122,34 @@ body {
 	font-weight: 600;
 }
 
-h3 {
-	margin-bottom: 0;
-}
-
 #main-doc {
-	position: absolute;
-	margin-left: 500px;
-	margin-right: 200px;
+	margin-left: 300px;
+	margin-right: 300px;
+	margin-bottom: 500px;
 	padding: 20px;
+	height: 100vh;
+	min-width: 50vw;
 }
 
+@media (max-width:700px) {
+	h3 {
+		font-size: 1.1rem;
+		margin-bottom: 0;
+	}
+	#main-doc {
+		margin-left: 180px;
+		margin-right: 10px;
+		font-size: 1.0rem;
+	}
+	.header01 {
+		font-size: 1.2rem;
+	}
+	.header02 {
+		font-size: 1.1rem;
+	}
+}
+
+/* Sections Typical */
 section {
 	margin-bottom: 2rem;
 }
@@ -124,14 +171,23 @@ section p {
 section span {
 	display: block;
 	font-weight: 600;
-  }
+}
 
 section ul {
 	list-style-type: none;
 	padding-left: 0;
 	margin-bottom: 0;
-  }
+}
+/* Sections Typical */
 
+/* Footer */
+footer p {
+	text-align: center;
+	background-color: var(--green);
+	color: var(--off-white);
+	padding: 0.5rem;
+}
+/* Footer */
 /*@keyframes animation {
 	from {background-color: var(--green);}
   	to {background-color: var(--off-white);}
